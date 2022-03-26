@@ -20,6 +20,20 @@ class Status(StrEnum):
 
 @dataclass
 class Task:
+    """
+    Class for representation of a single ITSM task.
+
+    It may be defined using various structures:
+    - simple dict
+    - simple dict with factory
+    - named tuple
+    - regular class
+    - dataclass
+    - third-party library as:
+        - pydantic
+
+    Example of a dataclass:
+    """
     name: str
     url: str
     kind: str
